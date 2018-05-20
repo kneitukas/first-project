@@ -1,0 +1,144 @@
+header{
+    position: fixed;
+    display: initial;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    background-color:rgba(40, 40, 40, 0.9);
+
+    @mixin atMedium {
+        display: flex;
+        border-bottom: 2px rgba(80, 80, 80, 0.5) solid;
+    }
+
+    .logo {
+        width: 60px;
+        height: auto;
+        margin-right: 10px;
+        display: none;
+
+        @mixin atMedium {
+            display: initial;
+        }
+
+        p{
+            font-size: 1.7rem;
+            font-weight: 500;
+        }
+    }
+
+    label {
+        padding: 10px 20px;
+        font-size: 2rem;
+        display: block;
+        cursor: pointer;
+        color: white;
+        width: 30px;
+        
+
+        @mixin atMedium {
+            display: none;
+        }
+    }
+
+    #toggle {
+        display: none;
+
+    }
+
+    #toggle:checked + .nav {
+        display: block;
+        z-index: 999;
+
+        @mixin atMedium {
+            display: inherit;
+        }
+    }
+
+    .nav {
+        color: $mainWhite;
+        display: none;
+        list-style-type: none;
+        font-weight: 500;
+    
+        @mixin atMedium {
+            display: inherit;
+        }
+
+        li {
+            
+            display: block;
+            margin-bottom: 15px;
+            
+    
+
+            @mixin atMedium {
+                display: initial;
+                margin-bottom: 0;
+
+            }
+
+            a{  
+                margin: 0 auto;
+                width: 110px;
+                display: block;
+                text-decoration: none;
+                color:white;
+                padding: 10px;
+                text-align: center;
+                
+                &:hover {
+                    border-bottom: 2px $mainBlue solid;
+                    margin-bottom: -2px !important;
+                    color: $mainBlue;
+                }
+
+                @mixin atMedium {
+                    width: 100%;
+                    margin-right: 30px;
+                    padding-bottom: 30px;
+                    padding-top: 30px;
+                }
+
+            }
+        }   
+    }
+
+    .social-icons {
+        list-style-type: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+        min-width: 207px;
+        // margin-left: 20px;
+
+        @mixin atMedium {
+            transform: none;
+            position: initial;
+            margin: 0;
+        }
+
+        .social-icons__last{
+            margin-right: 0;
+        }
+
+        li {
+            margin-right: 20px;
+            display: inline;
+               
+
+
+            .fab {
+                color: white;
+                padding: 10px;
+
+                &:hover {
+                    color: $mainBlue;
+                }
+            }
+        }   
+    }   
+}

@@ -1,0 +1,83 @@
+.agency {
+    position: relative;
+    background-color: $mainBlue;
+    text-align: center;
+
+    &__heading {
+        color: $mainWhite;
+        font-weight:500;
+        padding-top: 100px;
+        font-size: 1.3rem;
+        max-width: 100%;
+        margin-bottom: 120px;
+
+        @mixin atMedium {
+            font-size: 2rem;
+            padding-top: 120px;
+            margin-bottom: 145px;
+        }
+
+        @mixin atLarge {
+            font-size: 2.3rem;
+        }
+    }
+
+    .W {
+        position: absolute;
+        top:55px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 130px;
+
+        @mixin atMedium {
+            width: 160px;
+            top: 75px;
+        }
+    }
+
+    &__features {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding-bottom: 50px;
+       
+        @mixin atMedium {
+            grid-template-columns: 1fr 1fr;
+            padding-bottom: 90px;
+        }
+
+        @mixin atLarge {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding-bottom: 130px;
+        }
+
+        &--items{
+            object-fit: cover;
+            display: flex;
+            flex-direction: column;
+            color: $mainWhite;
+            text-align: center;
+            max-width: 300px;
+            margin: 0 auto;
+
+
+            img{
+                object-fit: contain;
+                width: 100px;
+                margin: 0 auto;
+
+                @mixin atMedium {
+                    width: 133px;
+                }
+            }
+
+            h4 {
+                margin-top: 20px;
+                margin-bottom: 35px;
+            }
+
+        }
+    }
+}

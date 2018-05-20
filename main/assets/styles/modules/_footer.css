@@ -1,0 +1,24 @@
+.footer {
+    background-color: #222;
+    // position: fixed;
+
+    &__ul {
+        // margin: 0 130px;
+        height: 80px;
+        align-items: center;
+        color: $mainWhite;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+
+        @mixin atMedium {
+            height: 100px;
+            text-align: initial;
+        }
+
+        li{
+            margin: 0 20px;
+        }
+    }
+}

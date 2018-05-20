@@ -1,0 +1,103 @@
+.ourTeam {
+    position: relative;
+    padding-bottom: 40px;
+    
+
+    &__heading {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-top: 110px;
+        margin-bottom: 80px;
+
+        @mixin atMedium {
+            font-size: 2.2rem;
+            padding-top: 160px;
+            margin-bottom: 115px;
+        }
+    }
+
+    &__T {
+        position: absolute;
+        top:60px;
+        width: 90px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+
+        @mixin atMedium {
+            top:90px;
+            width: 117px;
+        }
+    }
+
+    &__para {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+
+        @mixin atMedium {
+            font-size: 1.87rem;
+            margin-bottom: 77px;
+        }
+    }
+
+    &__members {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+        justify-content: center;
+        text-align: center;
+        
+    
+        
+
+        @mixin atMedium {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+            margin-bottom: 0;
+        }
+
+        @mixin atLarge {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+        }
+
+        &--member {
+            max-width: 270px;
+            margin: 0 auto;
+
+            img {
+                height: 300px;
+                width: 100%;
+
+                @mixin atMedium {
+                    height: 414px;
+                }
+            }
+        }
+
+        &--text-content {
+            position: relative;
+            bottom: 55px;
+            text-align: center;
+            display: inline-block;
+            background-color: white !important;
+            padding: 20px 40px;
+            padding-bottom: 0;
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $mainBlue;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+
+        }
+    }
+}
