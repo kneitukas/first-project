@@ -484,14 +484,14 @@ header{
     width: 100%;
     align-items: center;
     z-index: 1;
-    background-color: rgba(40, 40, 40, 0.9);   
+    background-color: rgba(40, 40, 40, 0.9);
 }
 
 @media (min-width: 800px) {
 
 header{
         display: flex;
-        border-bottom: 2px rgba(80, 80, 80, 0.5) solid   
+        border-bottom: 2px rgba(80, 80, 80, 0.5) solid
 }
     }
 
@@ -562,7 +562,7 @@ header .nav {
     }
 
 header .nav li {
-            
+
             display: block;
             margin-bottom: 15px;
         }
@@ -590,6 +590,8 @@ header .nav li a:hover {
                     border-bottom: 2px #11749e solid;
                     margin-bottom: -2px !important;
                     color: #11749e;
+
+                  
                 }
 
 @media (min-width: 800px) {
@@ -641,6 +643,13 @@ header .social-icons li .fab {
 header .social-icons li .fab:hover {
                     color: #11749e;
                 }
+
+header:active, header .active{
+        border-bottom: 2px #11749e solid;
+        margin-bottom: -2px !important;
+        color: #11749e;
+        background-color: rgba(17, 116, 158, 0.4);
+    }
 
 .wrapper {
     // position: relative;

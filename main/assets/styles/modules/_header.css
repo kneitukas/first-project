@@ -67,12 +67,12 @@ header{
             display: inherit;
         }
 
+
         li {
-            
+
             display: block;
             margin-bottom: 15px;
-            
-    
+
 
             @mixin atMedium {
                 display: initial;
@@ -93,6 +93,8 @@ header{
                     border-bottom: 2px $mainBlue solid;
                     margin-bottom: -2px !important;
                     color: $mainBlue;
+
+                  
                 }
 
                 @mixin atMedium {
@@ -141,4 +143,11 @@ header{
             }
         }   
     }   
+
+    &:active, .active{
+        border-bottom: 2px $mainBlue solid;
+        margin-bottom: -2px !important;
+        color: $mainBlue;
+        background-color:rgba(17, 116, 158, 0.4);
+    }
 }

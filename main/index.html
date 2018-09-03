@@ -11,7 +11,7 @@
     
 </head>
 <body>
-    <div class="creatives">
+    <div class="creatives" id="top">
     
             <header>
                 <div class="logo">
@@ -20,11 +20,11 @@
                     <label for="toggle">&#9776;</label>
                     <input type="checkbox" id="toggle">
                 <ul class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#agency">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a class="nav__contact" href="#contact">Contact us</a></li>
+                    <li class="active"><a class="scroll" href="#top">Home</a></li>
+                    <li><a class="scroll" href="#agency">About</a></li>
+                    <li><a class="scroll" href="#blog">Blog</a></li>
+                    <li><a class="scroll" href="#team">Team</a></li>
+                    <li><a class="nav__contact scroll" href="#contact">Contact us</a></li>
                 </ul>
                 <ul class="social-icons">
                     <li><a href="#"><i class="fab fa-facebook-f fa-1x"></i></a></li>
@@ -46,8 +46,7 @@
         </div>
     </div>
 
-    <div class="agency">
-            <a name="agency"></a>
+    <div class="agency" id="agency">
         <div class="wrapper">
             <img class="W" src="assets/images/W.png" alt="">
             <h2 class="agency__heading">WE ARE AN AWESOME AGENCY</h2>
@@ -99,8 +98,7 @@
         <!-- </div> -->
     </div>
 
-        <div class="blog">
-        <a name="blog"></a>
+        <div class="blog" id="blog">
             <div class="wrapper">
                 <img class="blog__B" src="assets/images/B.png" alt="letter B">
                 <h2 class="blog__heading">LET'S BLOG</h2>
@@ -144,8 +142,7 @@
             </div>
         </div>
 
-        <div class="ourTeam">
-        <a name="team"></a>
+        <div class="ourTeam" id="team">
             <div class="wrapper">
                 <img class="ourTeam__T" src="assets/images/T.png" alt="letter T">
                 <h2 class="ourTeam__heading">OUR TEAM</h2>
@@ -184,8 +181,7 @@
             </div>
         </div>  
 
-        <div class="project-form">
-        <a name="contact"></a>
+        <div class="project-form" id="contact">
             <div class="project-form__bg">
                 <div class="wrapper">
                     <img class="project-form__C" src="assets/images/C.png" alt="letter C">
@@ -211,8 +207,7 @@
         <div id="map">
             
         </div>
-        <script src="/main/scripts.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-bqCUQy8-ATcSW0VLBaPBwgDJ0neh_J8&callback=initMap"></script>
+       
         
         <footer class="footer">
             <div class="wrapper">
@@ -222,5 +217,12 @@
                  </ul>
              </div>
         </footer>
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-bqCUQy8-ATcSW0VLBaPBwgDJ0neh_J8&callback=initMap"></script>
 </body>
 </html>
